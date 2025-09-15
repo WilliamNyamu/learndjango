@@ -1,0 +1,14 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: learndjango
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: "learn-django-pw" # never hardcode your credentials
+      MYSQL_DATABASE: "learndjango"
+    ports:
+      - "60:3306"
+    volumes:
+      - learndjango_mysql_data:/var/lib/mysql
+volumes:
+  learndjango_mysql_data:
