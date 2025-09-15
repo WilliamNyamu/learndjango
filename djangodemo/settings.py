@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'book_store.apps.BookStoreConfig',
     'book_custodian.apps.BookCustodianConfig',
+    'books', # Add your app here
+    'product',
 ]
 
 MIDDLEWARE = [
