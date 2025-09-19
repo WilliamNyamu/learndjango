@@ -1,0 +1,11 @@
+<!-- templates/list_authors.html -->
+ {% extends "base.html" %}
+
+ {% block content %}
+ <h3>Authors in the database</h3>
+ <ul>
+    {% for author in authors %}
+        <li><i>{{author.name}}</i></li>
+    {% endfor %}
+ </ul>
+ {% endblock content %}

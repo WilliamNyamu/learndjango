@@ -1,0 +1,15 @@
+<!-- templates/book_detail.html -->
+ {% extends "base.html" %}
+ {% block title %}
+    <title>Book Detail</title>
+ {% endblock %}
+ {% block content %}
+    <h5><u>{{book.title}} details</u></h5>
+    <ul>
+        <li>{{book.title}} by {{book.author}}</li>
+        <li>Description: {{book.description}}</li>
+        <li>Published: {{book.publication_date}}</li>
+        <li>Pages: {{book.pages}}</li>
+    </ul>
+ {% endblock %}
+    
