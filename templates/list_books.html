@@ -7,7 +7,7 @@
     <h4>Available books in the database: </h4>
     <ul>
         {%for book in books %}
-            <li><a href="{% url 'book_detail' book.id %}">{{book.title}} by {{book.author}}</a></li>
+            <li><a href="{% url 'books:book_detail' book.id %}">{{book.title}} by {{book.author}}</a></li>
         {% empty %}
             <p> No books found </p>
         {% endfor %}

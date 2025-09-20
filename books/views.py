@@ -13,7 +13,7 @@ def list_authors(request):
     return render(request, 'list_authors.html', context=context)
 
 def book_detail(request, book_id):
-    book = get_object_or_404(Book, book_id)
+    book = get_object_or_404(Book, id = book_id)
     return render(request, "book_detail.html", {'book': book})
 
 def list_books(request):
