@@ -1,0 +1,12 @@
+<!-- product/product_list.html -->
+ <html>
+    <title>Products List</title>
+    <body>
+        <h4>Products available</h4>
+        {% for product in products %}
+            <p>{{product.Name}}</p>
+        {% empty %}
+            <p>No products available yet</p>
+        {% endfor %}
+    </body>
+ </html>
