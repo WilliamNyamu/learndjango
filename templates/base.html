@@ -1,8 +1,17 @@
 <!-- Base.html -->
+ {% load static %}
 <html>
-    {% block title %}
-    <title>Books Demo</title>
-    {% endblock title %}
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% block title %}
+        <title>Books Demo</title>
+        {% endblock title %}
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+        {% block extra_css %} {% endblock %}
+        
+    </head> 
     <body>
         {% block content %}
         {% endblock content %}
